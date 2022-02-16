@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NewsDetail">
+
+    <include
+        layout="@layout/toolbar_detail"/>
+
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="152dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/iv_news"
+                    android:scaleType="fitXY"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_news_title"
+            android:text="Title"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:fontFamily="@font/rubik_medium"
+            android:textStyle="bold"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_news_sumber"
+            android:text="Sumber"
+            android:textSize="10sp"
+            android:fontFamily="@font/rubik_medium"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:textColor="#aaa"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_news_date"
+            android:text="Date"
+            android:textSize="10sp"
+            android:fontFamily="@font/rubik_medium"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:textColor="#aaa"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_news_desc"
+            android:text="Description"
+            android:textSize="10sp"
+            android:fontFamily="@font/rubik_medium"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+
+</LinearLayout>
